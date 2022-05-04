@@ -1,0 +1,72 @@
+{
+  'count': 26051,
+  'items': [
+    {
+      'id': 195228,
+      'from_id': -27009091,
+      'owner_id': -27009091,
+      'date': 1651680360,
+      'marked_as_ads': 0,
+      'is_favorite': False,
+      'post_type': 'post',
+      'text': '"Тойоту" занесло на повороте в Краснодарском крае. Погиб пассажир легковушки',
+      'attachments': [
+        {
+          'type': 'video',
+          'video': {
+            'access_key': 'fe03c92909c9f1da4a',
+            'can_comment': 1,
+            'can_like': 1,
+            'can_repost': 1,
+            'can_subscribe': 1,
+            'can_add_to_faves': 1,
+            'can_add': 1,
+            'comments': 0,
+            'date': 1651677743,
+            'description': '',
+            'duration': 15,
+            'photo_130': 'https://i.mycdn.me/getVideoPreview?id=2365661973159&idx=8&type=39&tkn=aETNqzrsI4MrB2sb31PIOJEv2BM&fn=vid_s',
+            'photo_320': 'https://i.mycdn.me/getVideoPreview?id=2365661973159&idx=8&type=39&tkn=aETNqzrsI4MrB2sb31PIOJEv2BM&fn=vid_l',
+            'photo_800': 'https://i.mycdn.me/getVideoPreview?id=2365661973159&idx=8&type=39&tkn=aETNqzrsI4MrB2sb31PIOJEv2BM&fn=vid_x',
+            'photo_1280': 'https://i.mycdn.me/getVideoPreview?id=2365661973159&idx=8&type=39&tkn=aETNqzrsI4MrB2sb31PIOJEv2BM&fn=vid_w',
+            'first_frame_130': 'https://i.mycdn.me/getVideoPreview?id=2365661973159&idx=0&type=39&tkn=cZwaU_xXI-VYKg6AgwJlbvgMPUQ&fn=vid_sm',
+            'first_frame_160': 'https://i.mycdn.me/getVideoPreview?id=2365661973159&idx=0&type=39&tkn=cZwaU_xXI-VYKg6AgwJlbvgMPUQ&fn=vid_d',
+            'first_frame_320': 'https://i.mycdn.me/getVideoPreview?id=2365661973159&idx=0&type=39&tkn=cZwaU_xXI-VYKg6AgwJlbvgMPUQ&fn=vid_md',
+            'first_frame_800': 'https://i.mycdn.me/getVideoPreview?id=2365661973159&idx=0&type=39&tkn=cZwaU_xXI-VYKg6AgwJlbvgMPUQ&fn=vid_f',
+            'first_frame_1280': 'https://i.mycdn.me/getVideoPreview?id=2365661973159&idx=0&type=39&tkn=cZwaU_xXI-VYKg6AgwJlbvgMPUQ',
+            'width': 852,
+            'height': 468,
+            'id': 456254782,
+            'owner_id': -27009091,
+            'title': 'ДТП в Краснодарском крае - Rusdtp.ru',
+            'is_favorite': False,
+            'track_code': 'video_315ca1d1YDjRIFUJxu3JnfgDU6cN5bwY2oYSYQO2crS7O6NL-SRSEswrU2bH7cyW-2RnkjvXiSztviBldNce2A',
+            'views': 161
+          }
+        }
+      ],
+      'post_source': {
+        'type': 'vk'
+      },
+      'comments': {
+        'can_post': 1,
+        'count': 0,
+        'groups_can_post': True
+      },
+      'likes': {
+        'can_like': 1,
+        'count': 0,
+        'user_likes': 0,
+        'can_publish': 1
+      },
+      'reposts': {
+        'count': 0,
+        'user_reposted': 0
+      },
+      'views': {
+        'count': 146
+      },
+      'hash': 'HF_tDQt9jF_TrAUSLU8p5BEMOCH5'
+    }
+  ]
+}
