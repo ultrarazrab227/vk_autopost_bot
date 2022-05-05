@@ -10,7 +10,6 @@ config = configparser.ConfigParser()
 config.read("config.ini")
 #
 token = config['vk']['bot_token']
-print(token)
 bot = Bot(token)
 
 vk_session = vk_api.VkApi(config['vk']['email'], config['vk']['password'])
@@ -20,9 +19,6 @@ public_id = config['vk']['public_id']
 admin_id = config['vk']['chanel_admin_id']
 chat_id = config['vk']['chat_id']
 last = vk.wall.get(owner_id=public_id, count=1)
-
-print(admin_id)
-
 
 
 def check():
@@ -39,8 +35,13 @@ def check():
         text = req['items'][0]['text']
         ydl_opts = {}
         print('https://vk.com/video{}_{}'.format(owner_id, video_id))
-        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-            ydl.download(['https://vk.com/video{}_{}'.format(owner_id, video_id)])
+        try:
+            with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+                ydl.download(['https://vk.com/video{}_{}'.format(owner_id, video_id)])
+        except:
+            post_link = "https://vk.com/wall{}_{}".format(req['items'][0]['id'], owner_id)
+            bot.send_message(admin_id, post_link)
+            return
         filename = ""
         for root, dirs, files in os.walk("."):
             for name in files:
