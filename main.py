@@ -26,11 +26,11 @@ print(admin_id)
 
 
 # print(last)
-
+# last['items'][0]['id']
 def check():
     global last
     req = vk.wall.get(owner_id=public_id, count=1)
-    if req['items'][0]['id'] != last['items'][0]['id']:
+    if req['items'][0]['id'] != 1:
         if req['items'][0]['attachments'][0]['type'] != 'video':
             from_id = req['items'][0]['from_id']
             post_link = "https://vk.com/wall{}_{}".format(from_id, req['items'][0]['id'])
@@ -39,8 +39,8 @@ def check():
         owner_id = req['items'][0]['attachments'][0]['video']['owner_id']
         video_id = req['items'][0]['attachments'][0]['video']['id']
         text = req['items'][0]['text']
-        print('https://vk.com/video{}_{}'.format(owner_id, video_id))
         ydl_opts = {}
+        print('https://vk.com/video{}_{}'.format(owner_id, video_id))
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             ydl.download(['https://vk.com/video{}_{}'.format(owner_id, video_id)])
         filename = ""
@@ -54,8 +54,7 @@ def check():
             return
         video = open(filename, 'rb')
         try:
-            bot.send_video(chat_id, video)
-            bot.send_message(chat_id, text)
+            bot.send_video(chat_id, video, caption=text)
         except telegram.error.NetworkError:
             from_id = req['items'][0]['from_id']
             post_link = "https://vk.com/wall{}_{}".format(from_id, req['items'][0]['id'])
