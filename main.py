@@ -25,7 +25,7 @@ def check():
     global last
     req = vk.wall.get(owner_id=public_id, count=1)
     if req['items'][0]['id'] != last['items'][0]['id']:
-        if not 'attachments' in req['items']:
+        if not 'attachments' in req['items'][0]:
             from_id = req['items'][0]['from_id']
             post_link = "https://vk.com/wall{}_{}".format(from_id, req['items'][0]['id'])
             bot.send_message(admin_id, post_link)
